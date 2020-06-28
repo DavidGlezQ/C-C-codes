@@ -1,9 +1,10 @@
 #include <iostream>
 #include <stdlib.h>
+int columna = 1, i, a;
+char caracter[10];
+int imprimirCaracter(int columna, char caracter[10]);
 int main()
 {
-	int columna = 1, i, a;
-	char caracter[10];
 	printf("David Alejandro Gonzalez Quezada\n");
 	printf("20110407\n");
 	printf("Programa que imprime las columnas ingresadas por el ususario.\n");
@@ -14,6 +15,10 @@ int main()
 	fflush(stdin);
 	gets(caracter);
 	system("cls");
+	imprimirCaracter(columna, caracter);
+}
+
+int imprimirCaracter(int columna, char caracter[10]){
 	printf("Tu numero ingresado es: %i\n", columna);
 	for (i = 0; i <= columna; i++){
 		for (a = 1; a <= columna -i; a++) {
