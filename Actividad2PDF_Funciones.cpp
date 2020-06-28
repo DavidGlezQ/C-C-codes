@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main()
 {
-	int columna = 1,i,a;
+	int columna = 1, i, a;
 	char caracter[10];
 	printf("David Alejandro Gonzalez Quezada\n");
 	printf("20110407\n");
@@ -15,8 +15,8 @@ int main()
 	gets(caracter);
 	system("cls");
 	printf("Tu numero ingresado es: %i\n", columna);
-	for (i = 1; i <= columna; i++){
-		for (a = 1; i >= a; a++) {
+	for (i = 0; i <= columna; i++){
+		for (a = 1; a <= columna -i; a++) {
 			printf("%s",caracter);
 		}
 		printf("\n");
