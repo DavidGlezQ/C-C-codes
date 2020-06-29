@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-
 int numero = 0, potencia = 0, res = 1;
 int calcularPotencia(int numero, int potencia);
 int main(){
@@ -14,7 +13,6 @@ int main(){
     scanf("%i",&potencia);
     calcularPotencia(numero, potencia);
 }
-
 int calcularPotencia(int numero, int potencia){
 	for(int i = 1; i<=potencia; i++){
     	res = res*numero;
